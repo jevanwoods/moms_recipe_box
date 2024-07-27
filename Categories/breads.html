@@ -6,6 +6,9 @@
     <title>Mom's Recipes</title>
     <script src="../script.js" defer></script>
     <link rel="stylesheet" href="../styes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=PT+Sans+Caption:wght@400;700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="homeHeader">
@@ -27,7 +30,56 @@
           </nav>
     </div>
     <div class="bodyBox">
-
+        <div class="recipesBox">
+            <div class="recipe flexCenter">
+                <h3 class="recipeTitle">Gluten Free Bread</h3>
+                <h4 class="recipeAuthor lemonada">Mom</h4>
+                <button class="button" value="momsGlutenFreeBread" onclick="openRecipe(this.value)">Open</button>
+            </div>
+            <div class="recipe">
+                
+            </div>
+            <div class="recipe">
+                
+            </div>
+            <div class="recipe">
+                
+            </div>
+        </div>
+    </div>
+    <div class="hiddenRecipes">
+        <div id="momsGlutenFreeBread" class="hidden recipeLarge">
+            <button value="momsGlutenFreeBread" onclick="closeRecipe(this.value)">X</button>
+            <div class="ingredients">
+                <ul><p>Ingredients</p>
+                    <li>2.5 cups all purpose gluten free flour (Bob's Red Mill All Purpose Gluten Free Baking Flour)</li>
+                    <li>1 tsp xanthum gum</li>
+                    <li>1 tsp gluten free baking powder</li>
+                    <li>1 pkg rapid rise yeast (2.25 tsp)</li>
+                    <li>0.25 cup honey</li>
+                    <li>1 tsp apple cider</li>
+                    <li>1.5 cup warm water (100-110 deg Fahrenheit)</li>
+                    <li>3 egg whites (large eggs) at room temperature</li>
+                    <li>1 tsp salt</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <ol><p>Steps</p>
+                    <li>Spray a 9x5in bread pan with baking spray OR a 9x4in Pullman Loaf pan</li>
+                    <li>Move top oven rack to middle position</li>
+                    <li>Pre-heat oven to 350 degrees Fahrenheit</li>
+                    <li>Add gluten-free flour, baking powder, and instant yeast to a large bowel - Stir to combine all ingredients</li>
+                    <li>Add olive oil, honey, apple cider vinegar, egg whites, and warm water to flour mixture - Mix on low for 1 minute *do not use dough hook* (This mixture will look like thick cake batter)</li>
+                    <li>Pour dough into sprayed pan</li>
+                    <li>Cover with sprayed plastic wrap</li>
+                    <li>Cover pan with kitchen towel and allow bread to rise in a warm place for 30 minutes (do not allow bread to rise longer than 30 minutes)</li>
+                    <li>Place in the oven to bake for 30 to 45 minutes or until toothpick comes out clean (bread will turn golden brown - internal temperature will be between 205 to 210 degrees Fahrenheit)</li>
+                    <li>Allow the loaf to cool in pan for 10 minutes, then remove the loaf from the baking pan and place on a wire rack to cool (if bread completely cools in the pan, the steam can get trapped and the loaf can get soggy - especially the bottom)</li>
+                    <li>Allow the bread to cool completely before slicing</li>
+                </ol>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 </html>

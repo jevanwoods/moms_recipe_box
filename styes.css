@@ -1,12 +1,28 @@
 * {
     box-sizing: border-box;
     margin: 0px;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.lemonada {
+    font-family: "Lemonada";
+}
+
+header {
+    background-color: #beeac4;
 }
 
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+.flexCenter {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 }
 
 .recipeTabs {
@@ -18,6 +34,7 @@ body {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 8px;
+    background-color: #beeac4;
 }
 
 nav ul {
@@ -26,27 +43,27 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
-  }
+}
   
-  nav li {
-    background-color: seagreen;
+nav li {
+    background-color: burlywood;
     padding: 10px 20px;
     border-radius: 5px 5px 0 0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-  }
+}
   
-  nav li a {
+nav li a {
     text-decoration: none;
     color: ghostwhite;
     font-size: larger;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  /* Create the folder tab effect */
-  nav li:before {
+/* Create the folder tab effect */
+nav li:before {
     position: absolute;
     top: -10px;
     left: 10px;
@@ -55,45 +72,92 @@ nav ul {
     background-color: #fff;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-  }
+}
 
-  .appetizersTab {
+.appetizersTab {
     grid-column-start: 1;
     grid-column-end: 2;
-  }
+}
 
-  .mainDishesTab {
+.mainDishesTab {
     grid-column-start: 2;
     grid-column-end: 3;
-  }
+}
 
-  .sideDishesTab {
+.sideDishesTab {
     grid-column-start: 3;
     grid-column-end: 4;
-  }
+}
 
-  .breadsTab {
+.breadsTab {
     grid-column-start: 4;
     grid-column-end: 5;
-  }
+}
 
-  .soupsSaladsTab {
+.soupsSaladsTab {
     grid-column-start: 5;
     grid-column-end: 6;
-  }
+}
 
-  .dessertsTab {
+.dessertsTab {
     grid-column-start: 6;
     grid-column-end: 7;
-  }
+}
 
-  .drinksSmoothiesTab {
+.drinksSmoothiesTab {
     grid-column-start: 7;
     grid-column-end: 8;
-  }
+}
 
-  .bodyBox {
+.bodyBox {
     flex: 1 1 auto;
-    background-color: seagreen;
-  }
+    background-color: wheat;
+    padding: 5vh 5vw 10vh 5vw;
+}
 
+.recipesBox {
+    border: solid 0px black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+.recipe {
+    height: 300px;
+    width: 450px;
+    margin: 25px 45px;
+    background-color: ghostwhite;
+    border: solid saddlebrown 1px;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.recipeTitle {
+    font-size: 36px;
+
+}
+
+.hidden {
+    display: none;
+}
+.recipeLarge {
+    height: 80vh;
+    width: 70vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #beeac4;
+}
+
+.ingredients {
+    margin: 50px 100px;
+}
+
+.instructions {
+    margin: 50px 100px;
+}
